@@ -64,38 +64,38 @@
         <div class="w-full self-center px-4 lg:w-1/2">
           <h1 class="text-base font-semibold text-primary md:text-xl">Hi everyone 👋, I'm <span class="block font-bold text-dark text-4xl mt-1 lg:text-5xl">Mario Renaldy</span></h1>
           <h2 class="font-medium text-secondary text-lg mb-5 lg:text-2xl">Web Developer</h2>
-          <p class="font-medium text-secondary mb-10 leading-relaxed">I‘m a diligent CS Graduate from Parahyangan University. Currently really interested in Frontend, Backend, and Fullstack Development. Reach me out to talk about potential collaboration!</p>
+          <p class="font-medium text-secondary mb-7 md:mb-10 leading-relaxed">I‘m a diligent CS Graduate from Parahyangan University. Currently really interested in Frontend, Backend, and Fullstack Development. Reach me out to talk about potential collaboration!</p>
 
           <!-- <a href="#contact" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:opacity-80 transition duration-300 ease-in-out">Contact Me</a> -->
-
-          <a href="https://github.com/mariorenaldy" target="_blank" class="text-base font-semibold text-dark bg-gray-200 py-3 px-4 rounded-lg hover:shadow-lg hover:brightness-90 transition duration-300 ease-in-out mr-3">Github
-            <span>
+          
+          <button class="max-[374px]:mb-5">
+            <a href="https://github.com/mariorenaldy" target="_blank" class="text-base font-semibold text-dark bg-gray-200 py-2 px-3 md:py-3 md:px-4 rounded-lg hover:shadow-lg hover:brightness-90 transition duration-300 ease-in-out mr-2">Github
               <svg role="img" width="20" class="inline align-text-bottom" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
-            </span>
-          </a>
-          <a href="https://www.linkedin.com/in/mariorenaldy/" target="_blank" class="text-base font-semibold text-dark bg-gray-200 py-3 px-4 rounded-lg hover:shadow-lg hover:brightness-90 transition duration-300 ease-in-out mr-3">LinkedIn
-            <span>
+            </a>
+          </button>
+          <button class="max-[374px]:mb-5">
+            <a href="https://www.linkedin.com/in/mariorenaldy/" target="_blank" class="text-base font-semibold text-dark bg-gray-200 py-2 px-3 md:py-3 md:px-4 rounded-lg hover:shadow-lg hover:brightness-90 transition duration-300 ease-in-out mr-2">LinkedIn
               <svg role="img" width="20" class="inline align-text-bottom" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
-            </span>
-          </a>
-          <a href="" target="_blank" class="text-base font-semibold text-dark bg-gray-200 py-3 px-4 rounded-lg hover:shadow-lg hover:brightness-90 transition duration-300 ease-in-out">CV
-            <span>
+            </a>
+          </button>
+          <button>
+            <a href="https://drive.google.com/file/d/1yh-2U7-gYuTgEuIe6oJLXcp20x4JrA-4/view?usp=sharing" target="_blank" class="text-base font-semibold text-dark bg-gray-200 py-2 px-3 md:py-3 md:px-4 rounded-lg hover:shadow-lg hover:brightness-90 transition duration-300 ease-in-out">CV
               <svg role="img" width="20" class="inline align-text-bottom" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 17L17 7M17 7H8M17 7V16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
-            </span>
-          </a>
+            </a>
+          </button>
         </div>
-        <div class="w-full self-end px-4 lg:w-1/2">
-          <div class="relative mt-10 lg:mt-0 lg:right-0">
+        <div class="w-full self-end px-4 lg:w-1/2 mt-10 lg:mt-0">
+          <div class="relative inline mt-10 lg:mt-0 lg:right-0">
             <img src="dist/img/Mario.png" alt="Mario Renaldy" class="max-w-full mx-auto">
-            <span class="absolute -bottom-5 -z-10 left-1/2 -translate-x-1/2 md:scale-110">
-              <svg width="400" height="400" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                <path fill="#3b82f6" d="M55.9,-22C60.9,-2.7,45.5,19.4,24.6,34.9C3.6,50.4,-23,59.4,-38.1,49.2C-53.1,39,-56.6,9.7,-48.3,-14C-40.1,-37.7,-20,-55.8,2.7,-56.7C25.4,-57.6,50.9,-41.2,55.9,-22Z" transform="translate(100 100) scale(1.4)" />
+            <span class="w-[150%] h-auto max-w-[750px] absolute -bottom-[30%] -z-10 left-1/2 -translate-x-1/2">
+              <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <path fill="#3b82f6" d="M55.9,-22C60.9,-2.7,45.5,19.4,24.6,34.9C3.6,50.4,-23,59.4,-38.1,49.2C-53.1,39,-56.6,9.7,-48.3,-14C-40.1,-37.7,-20,-55.8,2.7,-56.7C25.4,-57.6,50.9,-41.2,55.9,-22Z" transform="translate(100 100)" />
               </svg>
             </span>
           </div>
@@ -300,27 +300,45 @@
         </div>
       </div>
 
-      <form>
+      <form id="contactForm">
         <div class="w-full lg:mx-auto lg:w-2/3">
           <div class="mb-8 w-full px-4">
             <label for="name" class="text-base font-bold text-primary">Name</label>
-            <input type="text" id="name" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+            <input type="text" id="name" class="items w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
           </div>
           <div class="mb-8 w-full px-4">
             <label for="email" class="text-base font-bold text-primary">Email</label>
-            <input type="email" id="email" class="w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+            <input type="email" id="email" class="items w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
           </div>
           <div class="mb-8 w-full px-4">
             <label for="message" class="text-base font-bold text-primary">Message</label>
-            <textarea type="email" id="email" class="h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
+            <textarea id="message" class="items h-32 w-full rounded-md bg-slate-200 p-3 text-dark focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
           </div>
           <div class="w-full px-4">
-            <button class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Send</button>
+            <button type="button" id="send" class="w-full rounded-full bg-primary py-3 px-8 text-base font-semibold text-white transition duration-500 hover:opacity-80 hover:shadow-lg">Send</button>
           </div>
         </div>
       </form>
     </div>
   </section>
+
+  <div id="toast-container">
+    <div id="toast-warning" class="invisible fixed bottom-5 left-1/2 transform -translate-x-1/2 flex items-center w-full max-w-xs p-4 text-white bg-red-500 rounded-lg shadow" role="alert">
+      <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-white bg-red-500 rounded-lg">
+          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM10 15a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm1-4a1 1 0 0 1-2 0V6a1 1 0 0 1 2 0v5Z"/>
+          </svg>
+          <span class="sr-only">Warning icon</span>
+      </div>
+      <div id="toast-message" class="ms-3 text-sm font-bold"></div>
+      <button id="toast-close" type="button" class="ms-auto -mx-1.5 -my-1.5 bg-red-500 text-white hover:text-white rounded-lg focus:ring-2 focus:ring-red-300 p-1.5 hover:bg-red-600 inline-flex items-center justify-center h-8 w-8" data-dismiss-target="#toast-warning" aria-label="Close">
+          <span class="sr-only">Close</span>
+          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+          </svg>
+      </button>
+    </div>
+  </div>
   <!-- Contact Section End -->
 
   <!-- Footer Start -->
@@ -423,6 +441,8 @@
   </footer>
   <!-- Footer End -->
 
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <script src="dist/js/script.js"></script>
 </body>
 </html>
