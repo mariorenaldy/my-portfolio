@@ -137,3 +137,131 @@ function show_toast(item){
     toastClone.classList.add('show');
     setTimeout(function(){ toastClone.remove(); }, 3000);
 }
+
+//Modal
+const portfolioMore = document.querySelector('#portfolio-more');
+const icrpedigreeMore = document.querySelector('#icrpedigree-more');
+const shuttleMore = document.querySelector('#shuttle-more');
+const vaksinasiMore = document.querySelector('#vaksinasi-more');
+const modalClose = document.querySelector('#modal-close');
+const projectModal = document.querySelector('#project-modal');
+const modalContent = document.querySelector('#modal-content');
+const html = document.querySelector('html');
+const header = document.querySelector('header');
+
+const modalTitle = document.querySelector('#modal-title');
+const modalImage = document.querySelector('#modal-image');
+const modalDesc = document.querySelector('#modal-desc');
+const modalURL = document.querySelector('#modal-URL');
+const modalCode = document.querySelector('#modal-code');
+
+portfolioMore.addEventListener('click', function() {
+    modalTitle.innerHTML = "My Portfolio";
+    modalImage.src = "dist/img/portfolio/portfolio.png";
+    modalDesc.innerHTML = "I created this website with the intention of using it as a showcase and a portfolio. I built this website with Tailwind, and still planning to finish the blog feature. I've made a contact section that is directly integrated with my personal email, so you can provide feedback or suggestions for the website.";
+    modalURL.href = "https://luxen.pro/";
+    modalCode.href = "https://github.com/mariorenaldy/my-portfolio";
+
+    projectModal.classList.toggle('hidden');
+    projectModal.classList.toggle('flex');
+    modalContent.classList.toggle('isOpen');
+    projectModal.classList.toggle('isOpen');
+    setTimeout(function() {
+        modalContent.classList.toggle('isOpen');
+        projectModal.classList.toggle('isOpen');
+    }, 100);
+
+    let details = navigator.userAgent; 
+    let regexp = /android|iphone|kindle|ipad/i; 
+    let isMobileDevice = regexp.test(details); 
+    if(!isMobileDevice) {
+        html.classList.add('padding-right');
+        header.classList.add('padding-right');
+    }
+    html.classList.toggle('overflow-hidden');
+});
+icrpedigreeMore.addEventListener('click', function() {
+    modalTitle.innerHTML = "ICRPedigree";
+    modalImage.src = "dist/img/portfolio/icrpedigree.png";
+    modalDesc.innerHTML = "ICRPedigree is a web-based dog registration management and certificate printing system made for Indonesian Canine Registry. The system generates all dog's pedigree to be included on a certificate.<br><br>A marketplace or e-commerce feature is also created as a prototype where ICR organizations can sell dog food products with integrated payment gateway and shipping costs calculator using third party APIs.";
+    modalURL.href = "https://icrpedigree.42web.io/";
+    modalCode.href = "https://github.com/mariorenaldy/icrpedigree/tree/skripsi";
+
+    projectModal.classList.toggle('hidden');
+    projectModal.classList.toggle('flex');
+    modalContent.classList.toggle('isOpen');
+    setTimeout(function() {
+        modalContent.classList.toggle('isOpen');
+    }, 100);
+
+    let details = navigator.userAgent; 
+    let regexp = /android|iphone|kindle|ipad/i; 
+    let isMobileDevice = regexp.test(details); 
+    if(!isMobileDevice) {
+        html.classList.add('padding-right');
+        header.classList.add('padding-right');
+    }
+    html.classList.toggle('overflow-hidden');
+});
+shuttleMore.addEventListener('click', function() {
+    modalTitle.innerHTML = "Shuttle Bus Booking Mobile Application";
+    modalImage.src = "dist/img/portfolio/shuttle.png";
+    modalDesc.innerHTML = "In the fifth semester of my Informatics major, I took a Programming on Mobile Devices course which required me to create a mobile app for the course's final project. The concept of this application is quite simple: it provides a booking system for a shuttle bus where we can choose the path/route, date, time, and the availabe vehicle size and seats. I decided to build the app using Android Studio and Kotlin with MVP architecture, and use the web service provided by the course and some third party libraries.";
+    modalURL.classList.add('hidden');
+    modalCode.href = "https://github.com/mariorenaldy/Shuttle";
+
+    projectModal.classList.toggle('hidden');
+    projectModal.classList.toggle('flex');
+    modalContent.classList.toggle('isOpen');
+    setTimeout(function() {
+        modalContent.classList.toggle('isOpen');
+    }, 100);
+    
+    let details = navigator.userAgent; 
+    let regexp = /android|iphone|kindle|ipad/i; 
+    let isMobileDevice = regexp.test(details); 
+    if(!isMobileDevice) {
+        html.classList.add('padding-right');
+        header.classList.add('padding-right');
+    }
+    html.classList.toggle('overflow-hidden');
+});
+vaksinasiMore.addEventListener('click', function() {
+    modalTitle.innerHTML = "COVID-19 Vaccination Management System";
+    modalImage.src = "dist/img/portfolio/vaksinasi.png";
+    modalDesc.innerHTML = "COVID-19 Vaccination Management System is a system that is made to facilitate COVID-19 vaccination services in Indonesia during the pandemic. This system is a mock project that was created in collaboration with two of my friends in 2021.";
+    modalURL.href = "https://vaksinasi.42web.io/";
+    modalCode.href = "https://github.com/mariorenaldy/vaksinasi";
+
+    projectModal.classList.toggle('hidden');
+    projectModal.classList.toggle('flex');
+    modalContent.classList.toggle('isOpen');
+    setTimeout(function() {
+        modalContent.classList.toggle('isOpen');
+    }, 100);
+
+    let details = navigator.userAgent; 
+    let regexp = /android|iphone|kindle|ipad/i; 
+    let isMobileDevice = regexp.test(details); 
+    if(!isMobileDevice) {
+        html.classList.add('padding-right');
+        header.classList.add('padding-right');
+    }
+    html.classList.toggle('overflow-hidden');
+});
+
+modalClose.addEventListener('click', function() {
+    modalContent.classList.toggle('isClosed');
+    projectModal.classList.toggle('isClosed');
+
+    setTimeout(function() {
+        projectModal.classList.toggle('hidden');
+        projectModal.classList.toggle('flex');
+        modalContent.classList.toggle('isClosed');
+        projectModal.classList.toggle('isClosed');
+        modalURL.classList.remove('hidden');
+        html.classList.toggle('overflow-hidden');
+        html.classList.remove('padding-right');
+        header.classList.remove('padding-right');
+    }, 100);
+});
