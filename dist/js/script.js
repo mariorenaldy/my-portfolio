@@ -205,7 +205,7 @@ icrpedigreeMore.addEventListener('click', function() {
 });
 shuttleMore.addEventListener('click', function() {
     modalTitle.innerHTML = "Shuttle Bus Booking Mobile Application";
-    modalImage.src = "dist/img/portfolio/shuttle.png";
+    modalImage.src = "dist/img/portfolio/Shuttle.png";
     modalDesc.innerHTML = "In the fifth semester of my Informatics major, I took a Programming on Mobile Devices course which required me to create a mobile app for the course's final project. The concept of this application is quite simple: it provides a booking system for a shuttle bus where we can choose the path/route, date, time, and the availabe vehicle size and seats. I decided to build the app using Android Studio and Kotlin with MVP architecture, and use the web service provided by the course and some third party libraries.";
     modalURL.classList.add('hidden');
     modalCode.href = "https://github.com/mariorenaldy/Shuttle";
