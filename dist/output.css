@@ -1656,6 +1656,11 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.hover\:text-\[\#61DAFB\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(97 218 251 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }

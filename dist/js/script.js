@@ -141,6 +141,7 @@ function show_toast(item){
 //Modal
 const portfolioMore = document.querySelector('#portfolio-more');
 const icrpedigreeMore = document.querySelector('#icrpedigree-more');
+const timerMore = document.querySelector('#timer-more');
 const shuttleMore = document.querySelector('#shuttle-more');
 const vaksinasiMore = document.querySelector('#vaksinasi-more');
 const modalClose = document.querySelector('#modal-close');
@@ -169,6 +170,29 @@ portfolioMore.addEventListener('click', function() {
     setTimeout(function() {
         modalContent.classList.toggle('isOpen');
         projectModal.classList.toggle('isOpen');
+    }, 100);
+
+    let details = navigator.userAgent; 
+    let regexp = /android|iphone|kindle|ipad/i; 
+    let isMobileDevice = regexp.test(details); 
+    if(!isMobileDevice) {
+        html.classList.add('padding-right');
+        header.classList.add('padding-right');
+    }
+    html.classList.toggle('overflow-hidden');
+});
+timerMore.addEventListener('click', function() {
+    modalTitle.innerHTML = "React Timer";
+    modalImage.src = "dist/img/portfolio/timer.png";
+    modalDesc.innerHTML = "React Timer is a replica of Google Timer widget (that can be found by searching “timer” on google search) that is built with React and JSX. This app has fully functional timer countdown system, and a span that act as an input which accept number keys with moveable cursor that could handle arrow keys as well. The app utilized HackTimer.js by turuslan to prevent countdown throttle when the tab is inactive.";
+    modalURL.href = "https://react-timer-three-alpha.vercel.app/";
+    modalCode.href = "https://github.com/mariorenaldy/react-timer";
+
+    projectModal.classList.toggle('hidden');
+    projectModal.classList.toggle('flex');
+    modalContent.classList.toggle('isOpen');
+    setTimeout(function() {
+        modalContent.classList.toggle('isOpen');
     }, 100);
 
     let details = navigator.userAgent; 
